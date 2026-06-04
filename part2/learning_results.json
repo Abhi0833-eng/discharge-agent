@@ -1,0 +1,183 @@
+{
+  "total_iterations": 5,
+  "results": [
+    {
+      "iteration": 1,
+      "variant_key": "variant_A",
+      "variant_name": "Minimal Structure",
+      "reward": 0.4865,
+      "adjusted_reward": 0.4865,
+      "missing_filled": 0,
+      "missing_before": 0,
+      "edit_distance": 0.5135,
+      "draft_length": 3432,
+      "bandit_state": {
+        "avg_rewards": {
+          "variant_A": 0.4865,
+          "variant_B": 0.55431,
+          "variant_C": 0.5,
+          "variant_D": 0.5,
+          "variant_E": 0.5
+        },
+        "counts": {
+          "variant_A": 1,
+          "variant_B": 4,
+          "variant_C": 0,
+          "variant_D": 0,
+          "variant_E": 0
+        },
+        "best_variant": "variant_B",
+        "total_iterations": 1
+      }
+    },
+    {
+      "iteration": 2,
+      "variant_key": "variant_B",
+      "variant_name": "Detailed Clinical",
+      "reward": 0.5287,
+      "adjusted_reward": 0.5287,
+      "missing_filled": 0,
+      "missing_before": 0,
+      "edit_distance": 0.4713,
+      "draft_length": 4480,
+      "bandit_state": {
+        "avg_rewards": {
+          "variant_A": 0.4865,
+          "variant_B": 0.55431,
+          "variant_C": 0.5,
+          "variant_D": 0.5,
+          "variant_E": 0.5
+        },
+        "counts": {
+          "variant_A": 1,
+          "variant_B": 4,
+          "variant_C": 0,
+          "variant_D": 0,
+          "variant_E": 0
+        },
+        "best_variant": "variant_B",
+        "total_iterations": 2
+      }
+    },
+    {
+      "iteration": 3,
+      "variant_key": "variant_B",
+      "variant_name": "Detailed Clinical",
+      "reward": 0.5299,
+      "adjusted_reward": 0.5299,
+      "missing_filled": 0,
+      "missing_before": 0,
+      "edit_distance": 0.4701,
+      "draft_length": 4202,
+      "bandit_state": {
+        "avg_rewards": {
+          "variant_A": 0.4865,
+          "variant_B": 0.55431,
+          "variant_C": 0.5,
+          "variant_D": 0.5,
+          "variant_E": 0.5
+        },
+        "counts": {
+          "variant_A": 1,
+          "variant_B": 4,
+          "variant_C": 0,
+          "variant_D": 0,
+          "variant_E": 0
+        },
+        "best_variant": "variant_B",
+        "total_iterations": 3
+      }
+    },
+    {
+      "iteration": 4,
+      "variant_key": "variant_B",
+      "variant_name": "Detailed Clinical",
+      "reward": 0.5106,
+      "adjusted_reward": 0.5106,
+      "missing_filled": 0,
+      "missing_before": 0,
+      "edit_distance": 0.4894,
+      "draft_length": 4266,
+      "bandit_state": {
+        "avg_rewards": {
+          "variant_A": 0.4865,
+          "variant_B": 0.55431,
+          "variant_C": 0.5,
+          "variant_D": 0.5,
+          "variant_E": 0.5
+        },
+        "counts": {
+          "variant_A": 1,
+          "variant_B": 4,
+          "variant_C": 0,
+          "variant_D": 0,
+          "variant_E": 0
+        },
+        "best_variant": "variant_B",
+        "total_iterations": 4
+      }
+    },
+    {
+      "iteration": 5,
+      "variant_key": "variant_B",
+      "variant_name": "Detailed Clinical",
+      "reward": 0.4972,
+      "adjusted_reward": 0.64804,
+      "missing_filled": 5,
+      "missing_before": 5,
+      "edit_distance": 0.5028,
+      "draft_length": 3680,
+      "bandit_state": {
+        "avg_rewards": {
+          "variant_A": 0.4865,
+          "variant_B": 0.55431,
+          "variant_C": 0.5,
+          "variant_D": 0.5,
+          "variant_E": 0.5
+        },
+        "counts": {
+          "variant_A": 1,
+          "variant_B": 4,
+          "variant_C": 0,
+          "variant_D": 0,
+          "variant_E": 0
+        },
+        "best_variant": "variant_B",
+        "total_iterations": 5
+      }
+    }
+  ],
+  "rewards_over_time": [
+    0.4865,
+    0.5287,
+    0.5299,
+    0.5106,
+    0.64804
+  ],
+  "final_bandit_state": {
+    "avg_rewards": {
+      "variant_A": 0.4865,
+      "variant_B": 0.55431,
+      "variant_C": 0.5,
+      "variant_D": 0.5,
+      "variant_E": 0.5
+    },
+    "counts": {
+      "variant_A": 1,
+      "variant_B": 4,
+      "variant_C": 0,
+      "variant_D": 0,
+      "variant_E": 0
+    },
+    "best_variant": "variant_B",
+    "total_iterations": 5
+  },
+  "best_variant": "variant_B",
+  "improvement": {
+    "avg_reward_first_half": 0.5076,
+    "avg_reward_second_half": 0.5628,
+    "absolute_improvement": 0.0552,
+    "percentage_improvement": 10.88,
+    "improved": true
+  }
+}

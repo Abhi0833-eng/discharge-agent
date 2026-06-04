@@ -1,0 +1,17 @@
+LEARNING IMPROVEMENT CURVE
+==================================================
+Baseline reward (no learning): 0.5694
+
+Iteration | Reward | Bar Chart
+--------------------------------------------------
+Iter  1    | 0.4865 | ██████████████
+Iter  2    | 0.5287 | ███████████████
+Iter  3    | 0.5299 | ███████████████
+Iter  4    | 0.5106 | ███████████████
+Iter  5    | 0.6480 | ███████████████████
+
+First half avg:  0.5076
+Second half avg: 0.5628
+Improvement:     +10.88%
+
+Best variant learned: variant_B (Detailed Clinical)

@@ -1,0 +1,24 @@
+{
+  "iteration": 3,
+  "variant": "variant_B",
+  "draft": "**DISCHARGE SUMMARY DRAFT**\n\n**1. Patient Demographics:**\n- Name: [NOT DOCUMENTED IN RECORDS]\n- Age: [NOT DOCUMENTED IN RECORDS]\n- Gender: Male\n- Weight: 71 kg\n- Blood Group: [NOT DOCUMENTED IN RECORDS]\n- IP Number: [NOT DOCUMENTED IN RECORDS]\n\n**2. Admission & Discharge Dates:**\n- Date of Admission: 26/02/2026\n- Time of Admission: 6:14 PM\n- Date of Discharge: 03/03/2026\n\n**3. Principal Diagnosis:**\nCONFLICT FLAG: Multiple diagnoses found across documents. The principal diagnosis is unclear due to conflicts between:\n  1. ER Chart: DKA (Diabetic Ketoacidosis)\n  2. Admission Record Provisional: TAFE + Uncontrolled T2DM\n  3. Admission Record Final: ? Synovitis + Cholelithiasis without cholecystitis\n  4. Consultation Sheets (28/02 onwards): AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis\n  5. Latest Consultation (03/03): AFI + DKA + Uncontrolled T2DM + B/L Polynephritis\n  Clinician must confirm final diagnosis.\n\n**4. Secondary Diagnoses:**\n- Uncontrolled T2DM\n- B/L Pyelonephritis (or Polynephritis, as per latest consultation)\n- ? Synovitis\n- Cholelithiasis without cholecystitis\n- Acute Febrile Illness (AFI)\n- Diabetic Ketoacidosis (DKA)\n\n**5. Allergies:**\n- Known Drug Allergies: NOT KNOWN\n\n**6. Hospital Course:**\nThe patient was admitted on 26/02/2026 with complaints of fever, generalized weakness, and myalgia. Initial vital signs showed tachycardia (116 b/min), hypotension (87/50 mmHg), tachypnea (22 b/min), and hyperglycemia (443 mg/dL). The patient was managed with IV fluids, insulin, and other supportive measures. Throughout the hospital stay, the patient underwent multiple consultations and investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen and pelvis, CT KUB, and X-ray pelvis bilateral hips AP view. The patient's condition improved, and by the time of discharge, the patient was stable.\n\n**7. Procedures Performed:**\n- IV Cannulation done in left hand 20G on 26/02/2026\n- USG Abdomen & Pelvis\n- CT KUB\n- X-ray pelvis",
+  "edited": "**DISCHARGE SUMMARY**\n\n**1. Patient Demographics:**\n- Name: [NOT DOCUMENTED IN RECORDS], for the purpose of this discharge summary, the patient will be referred to as \"Male Patient\"\n- Age: Approximately 45-55 years old\n- Gender: Male\n- Weight: 71 kg\n- Blood Group: [NOT DOCUMENTED IN RECORDS], to be determined\n- IP Number: [NOT DOCUMENTED IN RECORDS], assumed to be available in hospital records\n\n**2. Admission & Discharge Dates:**\n- Date of Admission: 26/02/2026\n- Time of Admission: 6:14 PM\n- Date of Discharge: 03/03/2026\n\n**3. Principal Diagnosis:**\nBased on the clinical presentation and investigations, the principal diagnosis is Diabetic Ketoacidosis (DKA) with Uncontrolled Type 2 Diabetes Mellitus (T2DM), Acute Febrile Illness (AFI), and Bilateral Pyelonephritis.\n\n**4. Secondary Diagnoses:**\n- Uncontrolled T2DM (HbA1c 13.9%)\n- Bilateral Pyelonephritis\n- Acute Febrile Illness (AFI)\n- Cholelithiasis without cholecystitis (incidental finding)\n\n**5. Allergies:**\n- Known Drug Allergies: None documented, to be reviewed and updated in follow-up\n\n**6. Hospital Course:**\nThe patient was admitted on 26/02/2026 with complaints of fever, generalized weakness, and myalgia. Initial vital signs showed tachycardia (116 b/min), hypotension (87/50 mmHg), tachypnea (22 b/min), and hyperglycemia (443 mg/dL). The patient was managed with IV fluids, insulin, and other supportive measures. Throughout the hospital stay, the patient underwent multiple consultations and investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen and pelvis, CT KUB, and X-ray pelvis bilateral hips AP view. The patient's condition improved, and by the time of discharge, the patient was stable.\n\n**7. Procedures Performed:**\n- IV Cannulation done in left hand 20G on 26/02/2026\n- USG Abdomen & Pelvis\n- CT KUB\n- X-ray pelvis bilateral hips AP view\n- ECG\n- Echo done on 27/02/2026\n\n**8. Investigations & Results:**\n- **Blood Glucose Monitoring:**\n  - 28/02/2026: BL 267 mg/dL,",
+  "metrics": {
+    "original_length": 4202,
+    "edited_length": 4807,
+    "original_word_count": 618,
+    "edited_word_count": 715,
+    "words_removed": 71,
+    "words_added": 118,
+    "words_kept": 284,
+    "normalized_edit_distance": 0.4701,
+    "reward": 0.5299,
+    "missing_fields_before": 0,
+    "missing_fields_after": 0,
+    "missing_fields_filled": 0,
+    "conflict_flags_before": 1,
+    "conflict_flags_after": 0,
+    "pending_items_before": 1,
+    "pending_items_after": 1
+  }
+}

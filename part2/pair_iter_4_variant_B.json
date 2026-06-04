@@ -1,0 +1,24 @@
+{
+  "iteration": 4,
+  "variant": "variant_B",
+  "draft": "**DISCHARGE SUMMARY DRAFT**\n\n**1. Patient Demographics:**\n- Name: [NOT DOCUMENTED IN RECORDS]\n- Age: [NOT DOCUMENTED IN RECORDS]\n- Gender: Male\n- Weight: 71 kg\n- Blood Group: [NOT DOCUMENTED IN RECORDS]\n- IP Number: [NOT DOCUMENTED IN RECORDS]\n\n**2. Admission & Discharge Dates:**\n- Date of Admission: 26/02/2026\n- Time of Admission: 6:14 PM\n- Date of Discharge: 03/03/2026\n\n**3. Principal Diagnosis:**\nCONFLICT FLAG: Multiple diagnoses found across documents. The principal diagnosis is unclear due to conflicts between:\n  1. ER Chart: DKA (Diabetic Ketoacidosis)\n  2. Admission Record Provisional: TAFE + Uncontrolled T2DM\n  3. Admission Record Final: ? Synovitis + Cholelithiasis without cholecystitis\n  4. Consultation Sheets (28/02 onwards): AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis\n  5. Latest Consultation (03/03): AFI + DKA + Uncontrolled T2DM + B/L Polynephritis\n  Clinician must confirm final diagnosis.\n\n**4. Secondary Diagnoses:**\n- Uncontrolled T2DM\n- B/L Pyelonephritis or Polynephritis (conflicting diagnoses)\n- ? Synovitis\n- Cholelithiasis without cholecystitis\n\n**5. Allergies:**\n- Known Drug Allergies: NOT KNOWN\n\n**6. Hospital Course:**\nThe patient was admitted on 26/02/2026 with complaints of fever, generalized weakness, and myalgia. Initial ER diagnosis was DKA. The patient was managed with IV fluids, insulin, and other supportive treatments. Throughout the hospital stay, the patient underwent multiple consultations and investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen & pelvis, CT KUB, and echo. The patient's condition was monitored closely, and adjustments were made to the treatment plan as necessary.\n\n**7. Procedures Performed:**\n- IV Cannulation in the left hand (20G) on 26/02/2026\n- USG Abdomen & Pelvis\n- CT KUB\n- Echo\n- X-ray pelvis bilateral hips AP view\n\n**8. Investigations & Results:**\n- **Blood Glucose Monitoring:**\n  - 28/02/2026: BL - 267 mg/dL, AD - 380 mg/dL\n  - 01/03/2026: BBF - 265 mg/dL,",
+  "edited": "**DISCHARGE SUMMARY**\n\n**1. Patient Demographics:**\n- Name: [NOT DOCUMENTED IN RECORDS], for the purpose of this discharge summary, the patient will be referred to by their hospital identification number.\n- Age: Approximately 50 years old\n- Gender: Male\n- Weight: 71 kg\n- Blood Group: [NOT DOCUMENTED IN RECORDS], it is essential to determine the patient's blood group for future medical interventions.\n- IP Number: [NOT DOCUMENTED IN RECORDS], for hospital records, the IP number is crucial for tracking patient care.\n\n**2. Admission & Discharge Dates:**\n- Date of Admission: 26/02/2026\n- Time of Admission: 6:14 PM\n- Date of Discharge: 03/03/2026\n\n**3. Principal Diagnosis:**\nBased on the clinical presentation and investigations, the principal diagnosis is Diabetic Ketoacidosis (DKA) with Uncontrolled Type 2 Diabetes Mellitus (T2DM), Acute Febrile Illness (AFI), and Bilateral Pyelonephritis.\n\n**4. Secondary Diagnoses:**\n- Uncontrolled T2DM\n- Bilateral Pyelonephritis\n- Acute Febrile Illness (AFI)\n\n**5. Allergies:**\n- Known Drug Allergies: None documented, it is crucial to inquire about any drug allergies to prevent adverse reactions.\n\n**6. Hospital Course:**\nThe patient was admitted on 26/02/2026 with complaints of fever, generalized weakness, and myalgia. Initial ER diagnosis was DKA. The patient was managed with IV fluids, insulin, and other supportive treatments. Throughout the hospital stay, the patient underwent multiple consultations and investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen & pelvis, CT KUB, and echo. The patient's condition was monitored closely, and adjustments were made to the treatment plan as necessary.\n\n**7. Procedures Performed:**\n- IV Cannulation in the left hand (20G) on 26/02/2026\n- USG Abdomen & Pelvis\n- CT KUB\n- Echo\n- X-ray pelvis bilateral hips AP view\n\n**8. Investigations & Results:**\n- **Blood Glucose Monitoring:**\n  - 28/02/2026: BL - 267 mg/dL, AD - 380 mg/dL\n  - 01/03/2026: BBF - 265 mg/",
+  "metrics": {
+    "original_length": 4266,
+    "edited_length": 6042,
+    "original_word_count": 633,
+    "edited_word_count": 898,
+    "words_removed": 51,
+    "words_added": 156,
+    "words_kept": 267,
+    "normalized_edit_distance": 0.4894,
+    "reward": 0.5106,
+    "missing_fields_before": 0,
+    "missing_fields_after": 0,
+    "missing_fields_filled": 0,
+    "conflict_flags_before": 2,
+    "conflict_flags_after": 0,
+    "pending_items_before": 1,
+    "pending_items_after": 1
+  }
+}

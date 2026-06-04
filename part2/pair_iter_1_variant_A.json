@@ -1,0 +1,24 @@
+{
+  "iteration": 1,
+  "variant": "variant_A",
+  "draft": "DRAFT Discharge Summary:\n\n1. **Patient Demographics**: \n   - Name: [NOT DOCUMENTED IN RECORDS]\n   - Age: [NOT DOCUMENTED IN RECORDS]\n   - Gender: Male\n   - Weight: 71 kg\n   - Blood Group: [NOT DOCUMENTED IN RECORDS]\n\n2. **Admission & Discharge Dates**: \n   - Date of Admission: 26/02/2026\n   - Date of Discharge: 03/03/2026\n\n3. **Principal Diagnosis**: \n   - There is a conflict in the principal diagnosis across different documents and consultations. The diagnoses mentioned include DKA (Diabetic Ketoacidosis), TAFE (Typhoid and Febrile Episode) + Uncontrolled T2DM, ? Synovitis + Cholelithiasis without cholecystitis, AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis, and AFI + DKA + Uncontrolled T2DM + B/L Polynephritis. The final diagnosis needs to be confirmed by the clinician.\n\n4. **Secondary Diagnoses**: \n   - Uncontrolled T2DM\n   - Pyelonephritis (bilateral)\n   - Possible Synovitis\n   - Cholelithiasis without cholecystitis\n\n5. **Allergies**: \n   - No known drug allergies\n\n6. **Hospital Course**: \n   - The patient was admitted with complaints of fever, generalized weakness, and myalgia.\n   - Initial ER diagnosis was DKA with critical hypotension and very high blood glucose levels.\n   - The patient underwent various investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen and pelvis, echo, and CT KUB.\n   - The patient received IV fluids, insulin, and other medications as per the treatment plan.\n   - Consultations from urology and orthopedics were taken, and the patient was advised diet counseling.\n\n7. **Procedures Performed**: \n   - IV cannulation\n   - USG abdomen and pelvis\n   - Echo\n   - CT KUB\n   - X-ray pelvis bilateral hips AP view\n\n8. **Investigations & Results**: \n   - CBC results showed low hemoglobin, variable total leukocyte count, and low platelet count on different days.\n   - Blood glucose monitoring showed variable levels, with insulin doses adjusted accordingly.\n   - Other investigation results are available b",
+  "edited": "**Edited Discharge Summary:**\n\n1. **Patient Demographics**: \n   - Name: [NOT DOCUMENTED IN RECORDS] (requires completion for accurate patient identification)\n   - Age: 50 years (estimated based on provided age range)\n   - Gender: Male\n   - Weight: 71 kg\n   - Blood Group: [NOT DOCUMENTED IN RECORDS] (requires completion for future medical reference)\n\n2. **Admission & Discharge Dates**: \n   - Date of Admission: 26/02/2026\n   - Date of Discharge: 03/03/2026\n   - Hospital: Sarji Super Speciality Hospital\n\n3. **Principal Diagnosis**: \n   - Diabetic Ketoacidosis (DKA) with Uncontrolled Type 2 Diabetes Mellitus (T2DM) and Acute Febrile Illness (AFI) + Bilateral Pyelonephritis. This diagnosis is selected as the principal diagnosis due to the patient's presentation with critical hypotension, very high blood glucose levels, and the presence of bilateral pyelonephritis, which are all clinically supported.\n\n4. **Secondary Diagnoses**: \n   - Uncontrolled T2DM (HbA1c 13.9%)\n   - Pyelonephritis (bilateral)\n   - Possible Synovitis\n   - Cholelithiasis without cholecystitis\n\n5. **Allergies**: \n   - No known drug allergies\n\n6. **Hospital Course**: \n   - The patient was admitted with complaints of fever, generalized weakness, and myalgia, diagnosed with DKA and critical hypotension.\n   - The patient underwent various investigations, including CBC, serum creatinine, electrolytes, ABG, urine routine, ECG, USG abdomen and pelvis, echo, and CT KUB, which showed [ESTIMATED] abnormal results consistent with the diagnoses.\n   - The patient received IV fluids, insulin (with doses adjusted according to blood glucose monitoring), and other medications as per the treatment plan.\n   - Consultations from urology and orthopedics were taken, and the patient was advised on diet counseling for diabetes management.\n\n7. **Procedures Performed**: \n   - IV cannulation\n   - USG abdomen and pelvis\n   - Echo\n   - CT KUB\n   - X-ray pelvis bilateral hips AP view\n\n8. **Investigations & Results**: \n   - CBC resul",
+  "metrics": {
+    "original_length": 3432,
+    "edited_length": 4672,
+    "original_word_count": 485,
+    "edited_word_count": 651,
+    "words_removed": 50,
+    "words_added": 140,
+    "words_kept": 230,
+    "normalized_edit_distance": 0.5135,
+    "reward": 0.4865,
+    "missing_fields_before": 0,
+    "missing_fields_after": 0,
+    "missing_fields_filled": 0,
+    "conflict_flags_before": 0,
+    "conflict_flags_after": 0,
+    "pending_items_before": 0,
+    "pending_items_after": 0
+  }
+}
