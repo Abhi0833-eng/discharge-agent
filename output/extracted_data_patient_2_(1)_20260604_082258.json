@@ -1,0 +1,552 @@
+{
+  "plan": {
+    "patient_summary": "A male patient with uncontrolled type 2 diabetes, admitted with fever, generalized weakness, and myalgia, diagnosed with DKA, pyelonephritis, and possible synovitis, with multiple consultations and laboratory results",
+    "plan": [
+      {
+        "step": 1,
+        "action": "Review patient's medication list to identify all discharge medications",
+        "tool": "null",
+        "safety_check": "Verify that all medications are correctly documented and up-to-date"
+      },
+      {
+        "step": 2,
+        "action": "Call reconcile_medications tool to compare admission vs discharge medications",
+        "tool": "reconcile_medications",
+        "safety_check": "Check for any changes in medication, including additions, removals, or dosage changes"
+      },
+      {
+        "step": 3,
+        "action": "Call check_drug_interactions tool to identify potential interactions between discharge medications",
+        "tool": "check_drug_interactions",
+        "safety_check": "Verify that all potential interactions are identified and addressed"
+      },
+      {
+        "step": 4,
+        "action": "Call check_pending_results tool to identify any pending laboratory or radiology results",
+        "tool": "check_pending_results",
+        "safety_check": "Verify that all pending results are identified and addressed before discharge"
+      },
+      {
+        "step": 5,
+        "action": "Review patient's laboratory results, including blood glucose monitoring and CBC results",
+        "tool": "null",
+        "safety_check": "Verify that all abnormal results are addressed and that the patient is stable for discharge"
+      },
+      {
+        "step": 6,
+        "action": "Call flag_for_clinician_review tool to escalate any clinical concerns or conflicts",
+        "tool": "flag_for_clinician_review",
+        "safety_check": "Verify that all clinical concerns or conflicts are addressed and resolved by the clinician"
+      }
+    ],
+    "immediate_concerns": [
+      "Multiple diagnoses with potential conflicts",
+      "Abnormal laboratory results, including low hemoglobin and platelet count",
+      "Patient's blood glucose levels are not well-controlled"
+    ],
+    "missing_critical_info": [
+      "Patient's name",
+      "Age",
+      "IP number",
+      "Blood group"
+    ]
+  },
+  "conflicts": {
+    "diagnosis_conflicts": [
+      {
+        "conflict": "Multiple diagnoses for the patient's condition",
+        "source1": "ER Chart",
+        "value1": "DKA (Diabetic Ketoacidosis)",
+        "source2": "Admission Record Provisional",
+        "value2": "TAFE + Uncontrolled T2DM",
+        "severity": "HIGH"
+      },
+      {
+        "conflict": "Discrepancy in final diagnosis",
+        "source1": "Admission Record Final",
+        "value1": "? Synovitis + Cholelithiasis without cholecystitis",
+        "source2": "Consultation Sheets (28/02 onwards)",
+        "value2": "AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis",
+        "severity": "HIGH"
+      },
+      {
+        "conflict": "Variation in diagnosis across consultations",
+        "source1": "Consultation 6 \u2014 28/02/2026",
+        "value1": "AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis",
+        "source2": "Consultation 8 \u2014 02/03/2026",
+        "value2": "AFI + DKA + Uncontrolled T2DM + B/L Polynephritis",
+        "severity": "MEDIUM"
+      }
+    ],
+    "medication_conflicts": [],
+    "safety_concerns": [
+      {
+        "concern": "Critically low blood pressure (87/50 mmHg) on admission",
+        "severity": "HIGH",
+        "recommendation": "Monitor blood pressure closely and adjust treatment as necessary"
+      },
+      {
+        "concern": "Critically high blood glucose levels (up to 496 mg/dL)",
+        "severity": "HIGH",
+        "recommendation": "Adjust insulin therapy and monitor blood glucose levels closely"
+      },
+      {
+        "concern": "Critically low serum sodium levels (127 mmol/L)",
+        "severity": "HIGH",
+        "recommendation": "Monitor electrolyte levels and adjust treatment as necessary"
+      },
+      {
+        "concern": "Severely uncontrolled diabetes (HbA1c: 13.9%)",
+        "severity": "HIGH",
+        "recommendation": "Adjust diabetes management plan and monitor HbA1c levels"
+      },
+      {
+        "concern": "Low oxygen saturation levels (as low as 58.6%)",
+        "severity": "HIGH",
+        "recommendation": "Monitor oxygen saturation levels and provide supplemental oxygen as necessary"
+      }
+    ],
+    "missing_critical_fields": [
+      "Patient Name",
+      "Age",
+      "IP Number",
+      "Blood Group"
+    ],
+    "medication_reconciliation_issues": [
+      {
+        "medication": "Ayurvedic medication for T2DM",
+        "issue": "Lack of documentation on the specific medication and dosage",
+        "severity": "MEDIUM"
+      },
+      {
+        "medication": "Insulin",
+        "issue": "Variations in insulin dosage across different reports",
+        "severity": "MEDIUM"
+      }
+    ]
+  },
+  "demographics": {
+    "patient_name": "[MISSING]",
+    "age": "[MISSING]",
+    "gender": "Male",
+    "ip_number": "[MISSING]",
+    "blood_group": "[MISSING]",
+    "weight": "71 kg",
+    "admission_date": "26/02/2026",
+    "discharge_date": "03/03/2026",
+    "department": "Internal Medicine (HDU/SDICU/Ward)"
+  },
+  "diagnoses": {
+    "principal_diagnosis": "DKA (Diabetic Ketoacidosis)",
+    "secondary_diagnoses": [
+      "Uncontrolled T2DM",
+      "B/L Pyelonephritis",
+      "AFI (Acute Febrile Illness)",
+      "? Synovitis",
+      "Cholelithiasis without cholecystitis"
+    ],
+    "provisional_diagnosis": "TAFE (Typhoid and Febrile Episode) + Uncontrolled T2DM",
+    "diagnosis_conflicts": [
+      "ER Chart: DKA (Diabetic Ketoacidosis)",
+      "Admission Record Provisional: TAFE + Uncontrolled T2DM",
+      "Admission Record Final: ? Synovitis + Cholelithiasis without cholecystitis",
+      "Consultation Sheets (28/02 onwards): AFI + DKA + Uncontrolled T2DM + B/L Pyelonephritis",
+      "Latest Consultation (03/03): AFI + DKA + Uncontrolled T2DM + B/L Polynephritis"
+    ],
+    "conflict_flag": true
+  },
+  "hospital_course": {
+    "admission_reason": "Fever, generalized weakness, and myalgia",
+    "key_events": [
+      {
+        "date": "26/02/2026",
+        "event": "Admission to hospital with fever, generalized weakness, and myalgia"
+      },
+      {
+        "date": "26/02/2026",
+        "event": "Diagnosis of DKA (Diabetic Ketoacidosis) in ER"
+      },
+      {
+        "date": "27/02/2026",
+        "event": "Consultation with CSIB Dr., diagnosis of Uncontrolled T2DM, AKI"
+      },
+      {
+        "date": "27/02/2026",
+        "event": "Echo done, showing sinus tachycardia, normal LV systolic function"
+      },
+      {
+        "date": "27/02/2026",
+        "event": "USG s/o pyelonephritis"
+      },
+      {
+        "date": "28/02/2026",
+        "event": "Urologist opinion, CT KUB done"
+      },
+      {
+        "date": "28/02/2026",
+        "event": "Diet counselling done"
+      },
+      {
+        "date": "01/03/2026",
+        "event": "Patient stable, symptomatically better"
+      },
+      {
+        "date": "02/03/2026",
+        "event": "Ortho opinion, advice for discharge on request"
+      },
+      {
+        "date": "03/03/2026",
+        "event": "Discharge from hospital"
+      }
+    ],
+    "clinical_progress": "Patient initially presented with fever, generalized weakness, and myalgia, diagnosed with DKA, Uncontrolled T2DM, and pyelonephritis. Patient's condition improved with treatment, but had multiple diagnoses across documents, including AFI, DKA, Uncontrolled T2DM, B/L Pyelonephritis, and ? Synovitis. Patient was stable and symptomatically better before discharge.",
+    "response_to_treatment": "Patient responded to treatment, with improvement in symptoms, but had fluctuations in blood glucose levels and required ongoing management of diabetes and other conditions."
+  },
+  "medications": {
+    "admission_medications": [
+      {
+        "name": "Inj. PAN",
+        "dose": "40mg",
+        "route": "IV",
+        "frequency": "once",
+        "duration": "[MISSING]"
+      },
+      {
+        "name": "Inj. EMESET",
+        "dose": "4mg",
+        "route": "IV",
+        "frequency": "once",
+        "duration": "[MISSING]"
+      },
+      {
+        "name": "Inf. NS",
+        "dose": "[MISSING]",
+        "route": "IV",
+        "frequency": "[MISSING]",
+        "duration": "[MISSING]"
+      },
+      {
+        "name": "Inj. Sodium Bicarbonate",
+        "dose": "[MISSING]",
+        "route": "IV",
+        "frequency": "[MISSING]",
+        "duration": "[MISSING]"
+      }
+    ],
+    "inpatient_medications": [
+      {
+        "name": "Insulin",
+        "dose": "[MISSING - varies across reports]",
+        "route": "[MISSING]",
+        "frequency": "[MISSING - varies across reports]",
+        "duration": "[MISSING]"
+      },
+      {
+        "name": "Tab. Ultracet",
+        "dose": "[MISSING]",
+        "route": "oral",
+        "frequency": "1-0-1",
+        "duration": "5 days"
+      },
+      {
+        "name": "Tab. Etoshine",
+        "dose": "[MISSING]",
+        "route": "[MISSING]",
+        "frequency": "[MISSING]",
+        "duration": "[MISSING]"
+      }
+    ],
+    "discharge_medications": [
+      {
+        "name": "[MISSING]",
+        "dose": "[MISSING]",
+        "route": "[MISSING]",
+        "frequency": "[MISSING]",
+        "duration": "[MISSING]"
+      }
+    ]
+  },
+  "investigations": {
+    "laboratory": [
+      {
+        "test": "Blood Glucose",
+        "value": "443 mg/dL",
+        "reference_range": "[MISSING]",
+        "critical": "CRITICAL - very high"
+      },
+      {
+        "test": "HbA1c",
+        "value": "13.9%",
+        "reference_range": "<7% for controlled DM",
+        "critical": "SEVERELY UNCONTROLLED"
+      },
+      {
+        "test": "CBC",
+        "value": "[MISSING - MULTIPLE REPORTS]",
+        "reference_range": "[MISSING]",
+        "critical": "[MISSING - MULTIPLE REPORTS]"
+      },
+      {
+        "test": "Serum Creatinine",
+        "value": "1.02 mg/dL",
+        "reference_range": "0.7-1.4",
+        "critical": "normal"
+      },
+      {
+        "test": "Random Blood Sugar (RBS)",
+        "value": "496 mg/dL",
+        "reference_range": "[MISSING]",
+        "critical": "CRITICAL HIGH"
+      },
+      {
+        "test": "Serum Sodium",
+        "value": "127 mmol/L",
+        "reference_range": "135-150",
+        "critical": "CRITICALLY LOW"
+      },
+      {
+        "test": "Serum Potassium",
+        "value": "3.84 mmol/L",
+        "reference_range": "[MISSING]",
+        "critical": "normal"
+      },
+      {
+        "test": "Serum Chloride",
+        "value": "84.90 mmol/L",
+        "reference_range": "90-108",
+        "critical": "LOW"
+      },
+      {
+        "test": "ABG (Arterial Blood Gas)",
+        "value": "[MISSING - MULTIPLE PARAMETERS]",
+        "reference_range": "[MISSING - MULTIPLE PARAMETERS]",
+        "critical": "[MISSING - MULTIPLE PARAMETERS]"
+      },
+      {
+        "test": "CRP (C-Reactive Protein)",
+        "value": "80.23 mg/L",
+        "reference_range": "<5.0 mg/L",
+        "critical": "MARKEDLY ELEVATED"
+      },
+      {
+        "test": "Widal Test",
+        "value": "[MISSING - MULTIPLE PARAMETERS]",
+        "reference_range": "[MISSING - MULTIPLE PARAMETERS]",
+        "critical": "[MISSING - MULTIPLE PARAMETERS]"
+      },
+      {
+        "test": "Urine Routine",
+        "value": "[MISSING - MULTIPLE REPORTS]",
+        "reference_range": "[MISSING]",
+        "critical": "[MISSING - MULTIPLE REPORTS]"
+      }
+    ],
+    "imaging": [
+      {
+        "test": "USG Abdomen & Pelvis",
+        "value": "[MISSING - RESULT NOT DOCUMENTED]",
+        "reference_range": "[MISSING]",
+        "critical": "[MISSING]"
+      },
+      {
+        "test": "CT KUB",
+        "value": "[MISSING - RESULT NOT DOCUMENTED]",
+        "reference_range": "[MISSING]",
+        "critical": "[MISSING]"
+      },
+      {
+        "test": "X-ray pelvis bilateral hips AP view",
+        "value": "[MISSING - RESULT NOT DOCUMENTED]",
+        "reference_range": "[MISSING]",
+        "critical": "[MISSING]"
+      },
+      {
+        "test": "Echo",
+        "value": "[MISSING - MULTIPLE PARAMETERS]",
+        "reference_range": "[MISSING - MULTIPLE PARAMETERS]",
+        "critical": "[MISSING - MULTIPLE PARAMETERS]"
+      }
+    ],
+    "pending": [
+      {
+        "test": "CBC",
+        "status": "[PENDING - MULTIPLE REPORTS]"
+      },
+      {
+        "test": "Serum Creatinine",
+        "status": "[PENDING - MULTIPLE REPORTS]"
+      },
+      {
+        "test": "Urine Routine",
+        "status": "[PENDING - MULTIPLE REPORTS]"
+      },
+      {
+        "test": "USG Abdomen & Pelvis",
+        "status": "[PENDING - RESULT NOT DOCUMENTED]"
+      },
+      {
+        "test": "CT KUB",
+        "status": "[PENDING - RESULT NOT DOCUMENTED]"
+      },
+      {
+        "test": "X-ray pelvis bilateral hips AP view",
+        "status": "[PENDING - RESULT NOT DOCUMENTED]"
+      }
+    ],
+    "critical_values": [
+      {
+        "test": "Blood Glucose",
+        "value": "443 mg/dL",
+        "reference_range": "[MISSING]",
+        "critical": "CRITICAL - very high"
+      },
+      {
+        "test": "HbA1c",
+        "value": "13.9%",
+        "reference_range": "<7% for controlled DM",
+        "critical": "SEVERELY UNCONTROLLED"
+      },
+      {
+        "test": "Random Blood Sugar (RBS)",
+        "value": "496 mg/dL",
+        "reference_range": "[MISSING]",
+        "critical": "CRITICAL HIGH"
+      },
+      {
+        "test": "Serum Sodium",
+        "value": "127 mmol/L",
+        "reference_range": "135-150",
+        "critical": "CRITICALLY LOW"
+      },
+      {
+        "test": "CRP (C-Reactive Protein)",
+        "value": "80.23 mg/L",
+        "reference_range": "<5.0 mg/L",
+        "critical": "MARKEDLY ELEVATED"
+      }
+    ]
+  },
+  "allergies": {
+    "allergies": [],
+    "allergy_status": "Not known"
+  },
+  "followup": {
+    "discharge_condition": "Stable",
+    "follow_up_instructions": [
+      "Diet counselling and strict diet modification",
+      "Allow low GI foods",
+      "Include fiber rich foods",
+      "Tab. Ultracet 1-0-1 x 5 days",
+      "Tab. Etoshine \u2014 Continue current medication",
+      "Ortho follow-up for ? Synovitis"
+    ],
+    "pending_results": [
+      "Some laboratory results may still be pending, but specific pending results are not explicitly documented",
+      "Final confirmation of diagnosis is pending clinician review due to conflicts in documented diagnoses"
+    ],
+    "return_precautions": [
+      "Monitor blood glucose levels",
+      "Watch for signs of infection or worsening condition",
+      "Adhere to prescribed medication regimen",
+      "Follow dietary advice to manage uncontrolled T2DM"
+    ]
+  },
+  "medication_safety": {
+    "interactions": {
+      "tool": "drug_interaction_checker",
+      "medications_checked": [
+        "Insulin",
+        "Tab. Ultracet",
+        "Tab. Etoshine",
+        "[MISSING]"
+      ],
+      "interactions_found": 0,
+      "interactions": [],
+      "status": "completed"
+    },
+    "reconciliation": {
+      "tool": "medication_reconciliation",
+      "added_at_discharge": [
+        "[MISSING]"
+      ],
+      "stopped_at_discharge": [
+        "Inj. PAN",
+        "Inj. EMESET",
+        "Inf. NS",
+        "Inj. Sodium Bicarbonate"
+      ],
+      "continued": [],
+      "reconciliation_flags": [
+        {
+          "medication": "Inj. PAN",
+          "flag": "STOPPED \u2014 no documented reason found. Clinician must verify.",
+          "severity": "MEDIUM"
+        },
+        {
+          "medication": "Inj. EMESET",
+          "flag": "STOPPED \u2014 no documented reason found. Clinician must verify.",
+          "severity": "MEDIUM"
+        },
+        {
+          "medication": "Inf. NS",
+          "flag": "STOPPED \u2014 no documented reason found. Clinician must verify.",
+          "severity": "MEDIUM"
+        },
+        {
+          "medication": "Inj. Sodium Bicarbonate",
+          "flag": "STOPPED \u2014 no documented reason found. Clinician must verify.",
+          "severity": "MEDIUM"
+        },
+        {
+          "medication": "[MISSING]",
+          "flag": "NEW at discharge \u2014 verify indication and patient education given.",
+          "severity": "LOW"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  "pending": {
+    "tool": "pending_results_checker",
+    "total_checked": 7,
+    "pending_count": 4,
+    "resulted_count": 3,
+    "pending_items": [
+      {
+        "investigation": "Blood Culture & Sensitivity",
+        "status": "PENDING",
+        "action_required": "Follow up result and review with clinician"
+      },
+      {
+        "investigation": "Contrast CT KUB",
+        "status": "PENDING",
+        "action_required": "Follow up result and review with clinician"
+      },
+      {
+        "investigation": "HbA1c repeat monitoring",
+        "status": "PENDING",
+        "action_required": "Follow up result and review with clinician"
+      },
+      {
+        "investigation": "Urology follow-up for bilateral pyelonephritis",
+        "status": "PENDING",
+        "action_required": "Follow up result and review with clinician"
+      }
+    ],
+    "resulted_items": [
+      {
+        "investigation": "CBC",
+        "status": "RESULTED"
+      },
+      {
+        "investigation": "Serum Creatinine",
+        "status": "RESULTED"
+      },
+      {
+        "investigation": "Urine Routine",
+        "status": "RESULTED"
+      }
+    ],
+    "status": "completed"
+  }
+}

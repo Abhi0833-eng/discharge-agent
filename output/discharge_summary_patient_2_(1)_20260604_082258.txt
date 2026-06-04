@@ -1,0 +1,129 @@
+**DRAFT NOTICE**
+This is a discharge summary DRAFT for clinician review. Please review and complete all [MISSING] fields, address conflicts, and verify pending results before finalizing.
+
+**PATIENT DEMOGRAPHICS**
+- Patient Name: [MISSING - CLINICIAN TO COMPLETE]
+- Age: [MISSING - CLINICIAN TO COMPLETE]
+- Gender: Male
+- IP Number: [MISSING - CLINICIAN TO COMPLETE]
+- Blood Group: [MISSING - CLINICIAN TO COMPLETE]
+- Weight: 71 kg
+
+**ADMISSION & DISCHARGE DATES**
+- Admission Date: 26/02/2026
+- Discharge Date: 03/03/2026
+- Department: Internal Medicine (HDU/SDICU/Ward)
+
+**PRINCIPAL DIAGNOSIS**
+- Principal Diagnosis: DKA (Diabetic Ketoacidosis) ⚠️ CONFLICT - See diagnosis conflicts below
+
+**SECONDARY DIAGNOSES**
+- Secondary Diagnoses:
+  1. Uncontrolled T2DM
+  2. B/L Pyelonephritis
+  3. AFI (Acute Febrile Illness)
+  4. ? Synovitis
+  5. Cholelithiasis without cholecystitis
+  ⚠️ CONFLICT - Multiple diagnoses for the patient's condition across different documents
+
+**ALLERGIES**
+- Allergies: None known
+- Allergy Status: Not known
+
+**HOSPITAL COURSE**
+- Admission Reason: Fever, generalized weakness, and myalgia
+- Key Events:
+  1. Admission to hospital with fever, generalized weakness, and myalgia (26/02/2026)
+  2. Diagnosis of DKA (Diabetic Ketoacidosis) in ER (26/02/2026)
+  3. Consultation with CSIB Dr., diagnosis of Uncontrolled T2DM, AKI (27/02/2026)
+  4. Echo done, showing sinus tachycardia, normal LV systolic function (27/02/2026)
+  5. USG s/o pyelonephritis (27/02/2026)
+  6. Urologist opinion, CT KUB done (28/02/2026)
+  7. Diet counselling done (28/02/2026)
+  8. Patient stable, symptomatically better (01/03/2026)
+  9. Ortho opinion, advice for discharge on request (02/03/2026)
+  10. Discharge from hospital (03/03/2026)
+
+**PROCEDURES PERFORMED**
+- Procedures:
+  1. Echo
+  2. USG Abdomen & Pelvis
+  3. CT KUB
+  4. X-ray pelvis bilateral hips AP view
+  5. Diet counselling
+
+**INVESTIGATIONS & RESULTS**
+- Laboratory:
+  1. Blood Glucose: 443 mg/dL (CRITICAL - very high)
+  2. HbA1c: 13.9% (SEVERELY UNCONTROLLED)
+  3. Serum Creatinine: 1.02 mg/dL (normal)
+  4. Random Blood Sugar (RBS): 496 mg/dL (CRITICAL HIGH)
+  5. Serum Sodium: 127 mmol/L (CRITICALLY LOW)
+  6. Serum Potassium: 3.84 mmol/L
+  7. Serum Chloride: 84.90 mmol/L (LOW)
+  8. CRP (C-Reactive Protein): 80.23 mg/L (MARKEDLY ELEVATED)
+- Imaging:
+  1. USG Abdomen & Pelvis: [MISSING - RESULT NOT DOCUMENTED]
+  2. CT KUB: [MISSING - RESULT NOT DOCUMENTED]
+  3. X-ray pelvis bilateral hips AP view: [MISSING - RESULT NOT DOCUMENTED]
+  4. Echo: [MISSING - MULTIPLE PARAMETERS]
+
+**DISCHARGE MEDICATIONS**
+- Discharge Medications:
+  1. [MISSING - CLINICIAN TO COMPLETE]
+- Changes from Admission:
+  1. Inj. PAN: Stopped
+  2. Inj. EMESET: Stopped
+  3. Inf. NS: Stopped
+  4. Inj. Sodium Bicarbonate: Stopped
+  5. Tab. Ultracet: Continued
+  6. Tab. Etoshine: Continued
+  7. Insulin: [MISSING - VARIATIONS ACROSS REPORTS]
+
+**MEDICATION RECONCILIATION FLAGS**
+- Medication Reconciliation Flags:
+  1. Inj. PAN: STOPPED — no documented reason found. Clinician must verify. (MEDIUM)
+  2. Inj. EMESET: STOPPED — no documented reason found. Clinician must verify. (MEDIUM)
+  3. Inf. NS: STOPPED — no documented reason found. Clinician must verify. (MEDIUM)
+  4. Inj. Sodium Bicarbonate: STOPPED — no documented reason found. Clinician must verify. (MEDIUM)
+  5. [MISSING]: NEW at discharge — verify indication and patient education given. (LOW)
+
+**DRUG INTERACTION ALERTS**
+- No drug interactions found by the drug interaction checker tool.
+
+**PENDING RESULTS**
+- Pending Results:
+  1. Blood Culture & Sensitivity
+  2. Contrast CT KUB
+  3. HbA1c repeat monitoring
+  4. Urology follow-up for bilateral pyelonephritis
+  5. Some laboratory results may still be pending, but specific pending results are not explicitly documented.
+
+**FOLLOW-UP INSTRUCTIONS**
+- Follow-up Instructions:
+  1. Diet counselling and strict diet modification
+  2. Allow low GI foods
+  3. Include fiber rich foods
+  4. Tab. Ultracet 1-0-1 x 5 days
+  5. Tab. Etoshine — Continue current medication
+  6. Ortho follow-up for ? Synovitis
+
+**DISCHARGE CONDITION**
+- Discharge Condition: Stable
+
+**CLINICIAN FLAGS**
+- Clinician Flags:
+  1. Patient Name: [MISSING - CLINICIAN TO COMPLETE]
+  2. Age: [MISSING - CLINICIAN TO COMPLETE]
+  3. IP Number: [MISSING - CLINICIAN TO COMPLETE]
+  4. Blood Group: [MISSING - CLINICIAN TO COMPLETE]
+  5. Diagnosis conflicts: ⚠️ CONFLICT - Multiple diagnoses for the patient's condition
+  6. Medication reconciliation issues:
+    - Ayurvedic medication for T2DM: Lack of documentation on the specific medication and dosage (MEDIUM)
+    - Insulin: Variations in insulin dosage across different reports (MEDIUM)
+  7. Safety Concerns:
+    - Critically low blood pressure (87/50 mmHg) on admission (HIGH)
+    - Critically high blood glucose levels (up to 496 mg/dL) (HIGH)
+    - Critically low serum sodium levels (127 mmol/L) (HIGH)
+    - Severely uncontrolled diabetes (HbA1c: 13.9%) (HIGH)
+    - Low oxygen saturation levels (as low as 58.6%) (HIGH)

@@ -1,0 +1,137 @@
+**DRAFT NOTICE**
+This is a DRAFT discharge summary for clinician review. Please review and complete all [MISSING] fields, address conflicts, and verify information before finalizing.
+
+**1. PATIENT DEMOGRAPHICS**
+- Patient Name: [MISSING]
+- Age: [MISSING]
+- Gender: Male
+- IP Number: [MISSING]
+- Blood Group: [MISSING]
+- Weight: 71 kg
+
+**2. ADMISSION & DISCHARGE DATES**
+- Admission Date: 26/02/2026
+- Discharge Date: 03/03/2026
+- Department: Internal Medicine (HDU/SDICU/Ward)
+
+**3. PRINCIPAL DIAGNOSIS**
+- Principal Diagnosis: DKA (Diabetic Ketoacidosis)
+- ⚠️ CONFLICT: Multiple diagnoses documented, including TAFE (Typhoid and Febrile Episode) + Uncontrolled T2DM.
+
+**4. SECONDARY DIAGNOSES**
+- Secondary Diagnoses:
+  - Uncontrolled T2DM
+  - B/L Pyelonephritis
+  - AFI (Acute Febrile Illness)
+  - ? Synovitis
+  - Cholelithiasis without cholecystitis
+  - B/L Polynephritis
+- ⚠️ CONFLICT: Discrepancies in secondary diagnoses across different documentation sources.
+
+**5. ALLERGIES**
+- Allergies: None documented
+- Allergy Status: Not known
+
+**6. HOSPITAL COURSE**
+- Admission Reason: Fever, generalized weakness, and myalgia
+- Key Events:
+  - Admitted to hospital with fever, generalized weakness, and myalgia
+  - Diagnosed with DKA (Diabetic Ketoacidosis) in ER
+  - Diagnosed with Uncontrolled T2DM and AKI
+  - USG Abdomen & Pelvis done, showing pyelonephritis
+  - Urologist opinion taken, CT KUB done
+  - Patient stable, symptomatically better
+  - Ortho opinion taken, X-ray pelvis bilateral hips AP view done
+  - Diet counselling done
+  - Discharged from hospital
+- Clinical Progress: Patient's condition improved with treatment, but had multiple diagnoses including DKA, Uncontrolled T2DM, pyelonephritis, and possible synovitis.
+- Response to Treatment: Patient responded to treatment, with improvement in symptoms and blood glucose levels, but had some fluctuations in condition during hospital stay.
+
+**7. PROCEDURES PERFORMED**
+- USG Abdomen & Pelvis
+- Echo
+- X-ray pelvis bilateral hips AP view
+- CT KUB (result pending)
+
+**8. INVESTIGATIONS & RESULTS**
+- Laboratory:
+  - Blood Glucose: 443 mg/dL (CRITICAL - very high)
+  - HbA1c: 13.9% (SEVERELY UNCONTROLLED)
+  - CBC: Hb - 10.4 gm/dL, TLC - 7820 cells/cumm, Platelet - 1.38 Lakhs
+  - Serum Creatinine: 1.02 mg/dL
+  - Random Blood Sugar (RBS): 496 mg/dL (CRITICAL HIGH)
+  - Serum Sodium: 127 mmol/L (CRITICALLY LOW — HYPONATREMIA)
+  - Serum Potassium: 3.84 mmol/L
+  - Serum Chloride: 84.90 mmol/L (LOW)
+  - ABG (Arterial Blood Gas): pH - 7.39, pCO2 - 32 mmHg, pO2 - 72 mmHg, Sodium [Na+] - 114 mmol/L, Potassium [K+] - 2.65 mmol/L, Chloride [Cl-] - 83 mmol/L, cCALCIUM - 0.71 mmol/L, HCT - 36%, Haemoglobin - 11.60 g/dL, SO2(C) - 94.20%, HCO3 - 19.20 mmol/L, Base Excess - -5.80 mmol/L, Lactate - 0.80 mmol/L
+  - CRP (C-Reactive Protein): 80.23 mg/L (MARKEDLY ELEVATED)
+  - Widal Test: Salmonella typhi 'O' - POSITIVE 1:160, Salmonella typhi 'H' - POSITIVE 1:80
+  - Urine Routine: pH - 5.5, Color - Pale Yellow, Appearance - Slightly Turbid, Albumin - Present+, Sugar - Present 1.5%, Ketones - Present+, Pus Cells - 4-5/hpf, Epithelial Cells - 1-2/hpf, RBCs - 2-3/hpf, Bacteria - Absent, Nitrite - Absent
+- Imaging:
+  - USG Abdomen & Pelvis: s/o pyelonephritis
+  - Echo: [MISSING]
+  - X-ray pelvis bilateral hips AP view: fracture united well
+  - CT KUB: [PENDING]
+
+**9. DISCHARGE MEDICATIONS**
+- [MISSING - CLINICIAN TO COMPLETE]
+- Changes from Admission:
+  - Inj. PAN: Stopped
+  - Inj. EMESET: Stopped
+  - Inf. NS: Stopped
+  - Inj. Sodium Bicarbonate: Stopped
+  - Insulin: [MISSING - varies across reports]
+  - Tab. Ultracet: 1-0-1 x 5 days
+  - Tab. Etoshine: [MISSING]
+
+**10. MEDICATION RECONCILIATION FLAGS**
+- Inj. PAN: STOPPED — no documented reason found. Clinician must verify.
+- Inj. EMESET: STOPPED — no documented reason found. Clinician must verify.
+- Inf. NS: STOPPED — no documented reason found. Clinician must verify.
+- Inj. Sodium Bicarbonate: STOPPED — no documented reason found. Clinician must verify.
+- [MISSING - CLINICIAN TO COMPLETE]: NEW at discharge — verify indication and patient education given.
+
+**11. DRUG INTERACTION ALERTS**
+- No drug interactions found by the drug interaction checker tool.
+
+**12. PENDING RESULTS**
+- Blood Culture & Sensitivity: PENDING
+- Contrast CT KUB: PENDING
+- HbA1c repeat monitoring: PENDING
+- Urology follow-up for bilateral pyelonephritis: PENDING
+- CBC: [PENDING]
+- Sr. Creat: [PENDING]
+- Urine Routine: [PENDING]
+- ECG: [PENDING]
+- CT KUB: [PENDING]
+
+**13. FOLLOW-UP INSTRUCTIONS**
+- Strict diet modification
+- Allow low GI foods
+- Include fiber rich foods
+- Continue current medication
+- Follow up with orthopedics for ? Synovitis
+- Follow up with urologist for B/L Pyelonephritis
+
+**14. DISCHARGE CONDITION**
+- Stable, with multiple diagnoses including DKA, Uncontrolled T2DM, and B/L Pyelonephritis
+
+**15. CLINICIAN FLAGS**
+- Patient Name: [MISSING]
+- Age: [MISSING]
+- IP Number: [MISSING]
+- Blood Group: [MISSING]
+- Discharge Medications: [MISSING - CLINICIAN TO COMPLETE]
+- ⚠️ CONFLICT: Multiple diagnoses and discrepancies in documentation.
+- ⚠️ SAFETY CONCERNS:
+  - Critically low blood pressure (87/50 mmHg) on admission
+  - Critically high blood glucose level (443 mg/dL) on admission
+  - Critically low serum sodium level (127 mmol/L)
+  - Critically low serum potassium level (3.84 mmol/L) in ABG report
+  - Metabolic acidosis (low HCO3 and high Base Excess) in ABG report
+  - Severely uncontrolled diabetes (HbA1c: 13.9%)
+  - Markedly elevated CRP (80.23 mg/L) indicating significant inflammation
+- Medication Reconciliation Issues:
+  - Ayurvedic medication for T2DM: No clear documentation of the medication's effectiveness or potential interactions with other medications.
+  - Inj. PAN 40mg IV and Inj. EMESET 4mg IV: No clear documentation of the indication for these medications.
+  - Tab. Ultracet 1-0-1 x 5 days and Tab. Etoshine: No clear documentation of the indication for these medications or potential interactions with other medications.
